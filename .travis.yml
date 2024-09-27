@@ -9,6 +9,5 @@ install:
 # Run the script
 script:
   - black --check example.py
-  - if $=1 then exit
-  - fi
+  - if [ $=1 ] then exit
   - python example.py
