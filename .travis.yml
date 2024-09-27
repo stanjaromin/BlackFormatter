@@ -10,4 +10,4 @@ install:
 script:
   - black --check example.py
   - if [$==0] then python example.py
-  
+  - echo "end"
