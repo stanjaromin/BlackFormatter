@@ -8,5 +8,5 @@ install:
 
 # Run the script
 script:
-  - python black example.py
+  - python -m black example.py
   - python example.py
