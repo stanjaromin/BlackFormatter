@@ -8,6 +8,6 @@ install:
 
 # Run the script
 script:
-  - black example.py
+  - black --check example.py
   - echo $
   - python example.py
