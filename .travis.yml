@@ -9,5 +9,7 @@ install:
 # Run the script
 script:
   - black --check example.py
-  - if $=1 then python example.py
+  allow_failures: 
+   - if: $=1 
+  - python example.py
   - echo "end"
