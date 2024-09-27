@@ -12,4 +12,4 @@ script:
   allow_failures: 
    - if: $=1 
   - python example.py
-  - echo "end"
+  
