@@ -6,12 +6,14 @@ python:
 install:
   - pip install black
 
-stage: formatter
-- black --check example.py
+jobs:
+- stage: formatter
+- script: black --check example.py
 
 # Run the script
-script:
-- CHK=$(echo $?)
-- echo $CHK
+- stage: display
+- script:
+  - CHK=$(echo $?)
+  - echo $CHK
 # if: CHK==1 than python example.py
   
