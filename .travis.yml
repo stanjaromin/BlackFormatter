@@ -9,6 +9,6 @@ install:
 # Run the script
 script:
 - black --check example.py
-- $check = echo $?
-if: $check = 0 than python example.py
+- check = echo $?
+if: check = 0 than python example.py
   
