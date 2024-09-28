@@ -13,7 +13,6 @@ jobs:
 
 # Run the script
   - stage: display
-  if: previous_stage = FAILED
   - script:
     - CHK=$(echo $?)
     - echo $CHK
