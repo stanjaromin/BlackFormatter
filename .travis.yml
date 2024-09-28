@@ -9,5 +9,5 @@ install:
 # Run the script
 script:
 - black --check example.py
-if: $=0 than python example.py
+if: '$' = 0 than python example.py
   
