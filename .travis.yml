@@ -9,12 +9,11 @@ install:
 jobs:
  include:
   - stage: formatter
-  - script: black --check example.py
+    script: black --check example.py
 
 # Run the script
   - stage: display
   - script:
-    - CHK=$(echo $?)
-    - echo $CHK
+    - echo 'DONE'
 # if: CHK==1 than python example.py
   
