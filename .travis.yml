@@ -8,7 +8,6 @@ install:
 
 # Run the script
 script:
-  - black --check example.py
-  - if: $=0 
-    - python example.py
+- black --check example.py
+- if: $=0 than python example.py
   
