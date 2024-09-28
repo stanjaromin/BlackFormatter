@@ -7,13 +7,14 @@ install:
   - pip install black
 
 jobs:
-- stage: formatter
-- script: black --check example.py
+ include:
+  - stage: formatter
+  - script: black --check example.py
 
 # Run the script
-- stage: display
-- script:
-  - CHK=$(echo $?)
-  - echo $CHK
+  - stage: display
+  - script:
+    - CHK=$(echo $?)
+    - echo $CHK
 # if: CHK==1 than python example.py
   
