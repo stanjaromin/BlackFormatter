@@ -9,7 +9,7 @@ install:
 # Run the script
 script:
 - black --check example.py
-- CHK = $(echo $?)
+- CHK=$(echo $?)
 - echo $CHK
 # if: $check = 0 than python example.py
   
