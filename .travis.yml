@@ -6,10 +6,12 @@ python:
 install:
   - pip install black
 
+stage: formatter
+- black --check example.py
+
 # Run the script
 script:
-- black --check example.py
 - CHK=$(echo $?)
 - echo $CHK
-if: CHK==1 than python example.py
+# if: CHK==1 than python example.py
   
