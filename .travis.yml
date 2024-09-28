@@ -11,5 +11,5 @@ script:
 - black --check example.py
 - CHK=$(echo $?)
 - echo $CHK
-# if: $check = 0 than python example.py
+if: CHK==1 than python example.py
   
