@@ -8,7 +8,7 @@ install:
 
 jobs:
  include:
-  - stage: formatter
+  - stage: formatter #this is our quality gate
     script: black --check example.py
 
 # Run the script
