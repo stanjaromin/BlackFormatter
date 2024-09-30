@@ -13,7 +13,7 @@ jobs:
 
 # Run the script
   - stage: display
-  - script:
+    script:
     - echo 'DONE'
 # if: CHK==1 than python example.py
   
